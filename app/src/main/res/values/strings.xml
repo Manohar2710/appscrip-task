@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Trivia App</string>
+	<string name="next">Next</string>
+	<string name="label_1">Sachin Tendulkar</string>
+	<string name="label_2">Virat Kolli</string>
+	<string name="label_3">Adam Gilchirst</string>
+	<string name="label_4">Jacques Kallis</string>
+	<string name="ques2_label_1">White</string>
+	<string name="ques2_label_2">Yellow</string>
+	<string name="ques2_label_3">Orange</string>
+	<string name="ques2_label_4">Green</string>
+</resources>
