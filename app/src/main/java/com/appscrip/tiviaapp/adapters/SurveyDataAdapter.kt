@@ -1,5 +1,6 @@
 package com.appscrip.tiviaapp.adapters
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -17,6 +18,7 @@ class SurveyDataAdapter: ListAdapter<SurveyData, SurveyDataAdapter.SurveyViewHol
 		private val wordItemView: TextView = itemView.findViewById(R.id.tv_id)
 
 		fun bind(SurveyData: SurveyData) {
+
 			wordItemView.text = SurveyData.id.toString()
 		}
 
@@ -44,6 +46,7 @@ class SurveyDataAdapter: ListAdapter<SurveyData, SurveyDataAdapter.SurveyViewHol
 	}
 
 	override fun onBindViewHolder(holder: SurveyViewHolder, position: Int) {
+		Log.i("onBindViewHolder",position.toString())
 		val current = getItem(position)
 		holder.bind(current)
 	}
