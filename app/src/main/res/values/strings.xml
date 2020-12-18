@@ -9,4 +9,16 @@
 	<string name="ques2_label_2">Yellow</string>
 	<string name="ques2_label_3">Orange</string>
 	<string name="ques2_label_4">Green</string>
+	<string name="what_is_your_name">What is your name?</string>
+	<string name="name">Name</string>
+	<string name="question_one">Who is the best cricketer in the world?</string>
+	<string name="question_two">What are the colors in the Indian national flag? Select all:</string>
+	<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="summary_first_line">Hello, "%1$s!" : \n Here are the answers selected:</string>
+	<string name="qa_first"> %1$s! \n Answer: %2$s</string>
+	<string name="qa_second">%1$s! \n Answer: %2$s</string>
+
+	<string name="finish">FINISH</string>
+	<string name="history">HISTORY</string>
 </resources>

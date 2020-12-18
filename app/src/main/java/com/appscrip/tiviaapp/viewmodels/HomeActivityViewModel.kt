@@ -10,14 +10,14 @@ import kotlinx.coroutines.launch
 //   the UI when the data actually changes.
 // - Repository is completely separated from the UI through the ViewModel.
 class HomeActivityViewModel(private val repository: SurveyRepository) :ViewModel(){
-	val allWords: LiveData<List<SurveyData>> = repository.allWords.asLiveData()
+	val allWords: LiveData<List<SurveyData>> = repository.allData.asLiveData()
 
 
 	/**
 	 * Launching a new coroutine to insert the data in a non-blocking way
 	 */
-	fun insert(word: SurveyData) = viewModelScope.launch {
-		repository.insert(word)
+	fun insert(surveyData: SurveyData) = viewModelScope.launch {
+		repository.insert(surveyData)
 	}
 }
 class HomeViewModelFactory(private val repository: SurveyRepository) : ViewModelProvider.Factory {
